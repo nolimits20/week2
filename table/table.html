@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="shortcut icon" href="./favicon.ico" title="image/x-icon">
+</head>
+<style>
+    table{
+        margin: auto;
+        width: 70%;
+        border-collapse: collapse;
+        border: 10px solid gray;
+    }
+    table tr{
+        border-bottom: 5px solid gray;
+    }
+    table th, table td{
+        padding: 20px 0;
+        text-align: center;
+        border-inline: 5px  dashed gray;
+    }
+</style>
+<body>
+    <!-- table>(thead>tr>th*4)+tbody(tr>th+td*3)*3+tfoot>tr>td -->
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Days/time</th>
+                <th scope="col">Morning</th>
+                <th scope="col">Afternoon</th>
+                <th scope="col">Evening</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">monday</th>
+                <td>html</td>
+                <td>css</td>
+                <td>tailwind</td>
+            </tr>
+            <tr>
+                <th scope="row">wednesday</th>
+                <td rowspan="2">javascript</td>
+                <td>html</td>
+                <td>html</td>
+            </tr>
+            <tr>
+                <th scope="row">friday</th>
+                <td colspan="2">css</td>
+            </tr>
+        </tbody>
+       
+        <tfoot>
+            <tr>
+                <td colspan="4">march time table</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>

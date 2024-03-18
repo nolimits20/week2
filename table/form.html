@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up for internship</title>
+    <link rel="short icon" href="./favicon.ico" title="image/x-icon">
+    <style>
+        label{
+            display: inline-block;
+            width: 100px;
+            margin-right: 50px;
+            background-color: chartreuse;
+        }
+        li{
+            /* gives spacing around the li */
+            padding-block: 10px;
+        }
+        ul{
+            /* removes dot in ul */
+            list-style: none;
+            margin: 20px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>sign up for internship</h1>
+    <form action="" method="post">
+        <fieldset>
+            <legend>personal information</legend>
+            <ul>
+                <li>
+                    <label for="full">full name</label>
+                    <input type="text" name="fullName" id="full" placeholder="John Doe">
+                </li>
+                <li>
+                    <label for="email">Email address</label>
+                    <input type="email" name="email" id="email" required>
+                </li>
+                <li>
+                    <label for="phone">phone number</label>
+                    <input type="tel" name="tel" id="phone" placeholder="081*******">
+                </li>
+                <li>
+                    <label for="address">home address</label>
+                    <input type="text" name="address" id="address">
+                </li>
+                <li>
+                    <label for="dob">date of birth</label>
+                    <input type="date" id="dob">
+                </li>
+                <li>
+                    <p>gender</p>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">male</label>
+                    <input type="radio" name="gender" id="female" checked>
+                    <label for="female">female</label>
+                </li>
+                <li>
+                    <p>religion</p>
+                    <input type="radio" name="religion" id="christian">
+                    <label for="christian">christian</label>
+                    <input type="radio" name="religion" id="muslim">
+                    <label for="muslim">muslim</label>
+                    <input type="radio" name="religion" id="traditional">
+                    <label for="traditional">traditonal</label>
+                </li>
+                <li>
+                    <p>state of origin</p>
+                    <select name="state" id="state" title="state of origin">
+                        <option value="none" selected>choose state</option>
+                        <optgroup label="South">
+                            <option value="ab">Abia</option>
+                            <option value="lg">Lagos</option>
+                            <option value="ek">Ekiti</option>
+                            <option value="og">Ogun</option>
+                            <option value="ed">Edo</option>
+                            <option value="kw">Kwara</option>
+                            <option value="oy">Oyo</option>
+                            <option value="on">Ondo</option>
+                        </optgroup>
+                        <optgroup label="North">
+                            <option value="tb">Taraba</option>
+                            <option value="kn">Kano</option>
+                        </optgroup>
+                    </select>
+                
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Profesional Information</legend>
+            <ul>
+                <li>
+                    <p>choose your stack</p>
+                    <input type="checkbox" name="stack" id="re">
+                    <label for="re">MEARN</label>
+                    <input type="checkbox" name="stack" id="an">
+                    <label for="an">MEAN</label> <br>
+                    <input type="checkbox" name="stack" id="dj">
+                    <label for="dj">Django</label>
+                    <input type="checkbox" name="stack" id="ja">
+                    <label for="ja">Java</label>
+                </li>
+                <li>
+                    <label for="resume">upload resume</label>
+                    <input type="file" name="resume" id="resume" accept=".pdf,.png" multiple>
+                </li>
+                <li>
+                    <p>describe yourself in 150 words</p>
+                    <textarea name="describe" id="desc" cols="30" rows="10"></textarea>
+                </li>
+                <li>
+                    <label for="pw">set password</label>
+                    <input type="password" name="password" id="pw">
+                </li>
+                <li>
+                    <!-- <input type="submit" value="apply"> -->
+                    <button type="submit"> apply</button>
+                </li>
+            </ul>
+        </fieldset>
+        
+    </form>
+    <footer>
+        <p> &copy; Copyright 2024</p>
+    </footer>
+</body>
+</html>
